@@ -1,0 +1,29 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+color-modes = true
+cursorline = true
+idle-timeout = 50
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false # counter-intuitively, this ALLOWs hidden files, i.e., it's really "ignore hidden? false"
+
+[editor.indent-guides]
+render = true
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.soft-wrap]
+enable = true
+
+[editor.statusline]
+right = ["diagnostics", "selections", "register", "position", "position-percentage", "total-line-numbers"]
+center = ["version-control"]
