@@ -165,3 +165,6 @@ export PATH="/home/jmhill/.turso:$PATH"
 
 # Devbox global
 eval "$(devbox global shellenv)"
+
+# Start zellij session on new shell
+eval "$(zellij setup --generate-auto-start bash)"
