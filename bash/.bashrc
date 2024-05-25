@@ -162,3 +162,6 @@ function yy() {
 
 # Turso
 export PATH="/home/jmhill/.turso:$PATH"
+
+# Devbox global
+eval "$(devbox global shellenv)"
