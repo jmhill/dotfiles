@@ -1,6 +1,6 @@
 # Nushell Environment Config File
 #
-# version = "0.93.0"
+# version = "0.92.1"
 
 def create_left_prompt [] {
     let dir = match (do --ignore-shell-errors { $env.PWD | path relative-to $nu.home-path }) {
@@ -98,3 +98,7 @@ $env.NU_PLUGIN_DIRS = [
 
 # To load from a custom file you can use:
 # source ($nu.default-config-dir | path join 'custom.nu')
+
+# starship setup
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship/init.nu
