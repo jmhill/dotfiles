@@ -19,7 +19,8 @@ hidden = false # counter-intuitively, this ALLOWs hidden files, i.e., it's reall
 render = true
 
 [editor.lsp]
-display-inlay-hints = true
+# turning inlay hints off again, it's just too noisy in javascript
+# display-inlay-hints = true
 
 [editor.soft-wrap]
 enable = true
