@@ -868,3 +868,4 @@ $env.config = {
     ]
 }
 use ~/.cache/starship/init.nu
+use git-completions.nu *
