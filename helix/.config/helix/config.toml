@@ -6,6 +6,14 @@ bufferline = "multiple"
 color-modes = true
 cursorline = true
 idle-timeout = 50
+# Show diagnostics at the end of the line for all severities down to "hint"
+end-of-line-diagnostics = "disable"
+
+[editor.inline-diagnostics]
+# Show inline diagnostics when the cursor is on the line (set severity as needed: "error", "warning", "info", "hint")
+cursor-line = "hint"
+# Optionally, control diagnostics on other lines
+other-lines = "disable"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -31,3 +39,4 @@ center = ["version-control"]
 
 [keys.normal]
 C-y = ":sh zellij run -f -x 10% -y 10% --width 80% --height 80% -- bash ~/.config/helix/yazi-picker.sh"
+
