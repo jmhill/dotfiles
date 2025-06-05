@@ -1,3 +1,4 @@
 font-family = "Fira Code Nerd Font"
 theme = "tokyonight"
 link-url = true
+keybind = shift+enter=text:\n
