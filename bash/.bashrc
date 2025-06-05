@@ -116,12 +116,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Deno
-export DENO_INSTALL="/home/jmhill/.deno"
-export PATH="$DENO_INSTALL/bin:$PATH"
-
-# Console Ninja, vs code browser extension
-PATH=~/.console-ninja/.bin:$PATH
 
 # Needed for fancy Helix editor/terminal themes
 export COLORTERM=truecolor
@@ -137,19 +131,6 @@ export EDITOR=hx
 # Rust setup
 . "$HOME/.cargo/env"
 
-# bun
-export BUN_INSTALL="$HOME/.bun"
-export PATH=$BUN_INSTALL/bin:$PATH
-
-# asdf version manager
-# . "$HOME/.asdf/asdf.sh"
-# . "$HOME/.asdf/completions/asdf.bash"
-
-
-# direnv
-
-eval "$(direnv hook bash)"
-
 # yazi wrapper to change current working directory on exit
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
@@ -160,11 +141,29 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
+# Deno
+export DENO_INSTALL="/home/jmhill/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
 # Turso
 export PATH="/home/jmhill/.turso:$PATH"
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+# opencode
+export PATH="/home/jmhill/.opencode/bin:$PATH"
+
+# this is the default install path for goose, not
+# sure yet what other tools might want to use this dir
+export PATH="/home/jmhill/.local/bin:$PATH"
+
 # Devbox global
 eval "$(devbox global shellenv)"
+
+# direnv
+eval "$(direnv hook bash)"
 
 # Start zellij session on new shell
 eval "$(zellij setup --generate-auto-start bash)"
