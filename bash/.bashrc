@@ -159,6 +159,8 @@ export PATH="/home/jmhill/.opencode/bin:$PATH"
 # sure yet what other tools might want to use this dir
 export PATH="/home/jmhill/.local/bin:$PATH"
 
+export PATH="/home/jmhill/.claude/local:$PATH"
+
 # Devbox global
 eval "$(devbox global shellenv)"
 
