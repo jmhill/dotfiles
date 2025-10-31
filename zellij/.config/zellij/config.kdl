@@ -312,6 +312,10 @@ default_layout "default"
 //   - false
 // 
 // mouse_mode false
+
+// Setting false removes the "highlight pane frame on hover"
+// and alt click to group stuff that was added in recent versions
+advanced_mouse_actions false
  
 // Toggle having pane frames around the panes
 // Options:
