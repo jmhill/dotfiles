@@ -868,4 +868,5 @@ $env.config = {
 }
 use ~/.cache/starship/init.nu
 use git-completions.nu *
+use git-gtr-completions.nu *
 use std/dirs
