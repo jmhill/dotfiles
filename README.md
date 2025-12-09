@@ -8,6 +8,7 @@ Personal configuration files managed with GNU Stow.
 ```bash
 git clone <repo-url> ~/dotfiles
 cd ~/dotfiles
+git submodule update --init --recursive  # Initialize git submodules
 ```
 
 2. Install GNU Stow if not already installed:
@@ -63,12 +64,15 @@ stow -R <package-name>
 - `claude` - Claude.ai assistant configuration
 - `env_setup_scripts` - Environment setup scripts
 - `ghostty` - Ghostty terminal emulator configuration
+- `git-tools` - Git workflow tools (git-worktree-runner)
 - `helix` - Helix text editor configuration
 - `nushell` - Nushell configuration
 - `nushell-macos` - macOS-specific Nushell configuration
 - `rust` - Rust development configuration
 - `starship` - Starship prompt configuration
 - `yazi` - Yazi file manager configuration
+- `zellij` - Zellij terminal multiplexer configuration
+- `zsh` - Zsh shell configuration
 
 ## Structure
 
